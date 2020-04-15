@@ -10,7 +10,7 @@ function ts_print() {
     1)  TYPE='WARN'
     ;;
     esac
-    echo $TIME_STAMP $TYPE} - $2
+    echo $TIME_STAMP $TYPE - $2
 }
 
 function result_print() {
