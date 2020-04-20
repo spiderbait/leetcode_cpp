@@ -22,14 +22,12 @@ public:
 class Solution {
 public:
     Node* connect(Node* root) {
-        if (root == NULL)
+        if (root != NULL)
         {
-            exit(0);
-        }
         cout << root->val << endl;
         connect(root->left);
         connect(root->right);
-            
+        }   
     }
 };
 
