@@ -24,10 +24,19 @@ public:
     Node* connect(Node* root) {
         if (root != NULL)
         {
-        cout << root->val << endl;
-        connect(root->left);
-        connect(root->right);
+            cout << root->val << endl;
+            Node *p = root->left;
+            Node *q = root->right;
+            while (p != NULL && q != NULL)
+            {
+                p->next = q;
+                p = p->right;
+                q = q->left;
+            }
+            connect(root->left);
+            connect(root->right);
         }   
+        return root;
     }
 };
 
