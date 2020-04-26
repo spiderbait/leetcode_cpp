@@ -10,7 +10,7 @@ function ts_print() {
     1)  TYPE='WARN'
     ;;
     esac
-    echo $TIME_STAMP $TYPE - $2
+    echo $TIME_STAMP $TYPE $2
 }
 
 function result_print() {
@@ -22,23 +22,23 @@ function result_print() {
 }
 clear
 # complie
-ts_print 0 'cpp file '$1' start compiling...'
+ts_print 0 '['$1'] - start compiling...'
 g++ $1
 
 # run if complied
 if [ $? == 0 ]
 then
-    ts_print 0 'cpp file '$1' compile completed.'
-    ts_print 0 'executable start running...'
+    ts_print 0 '['$1'] - compile completed.'
+    ts_print 0 '['$1'] - executable start running...'
     ./a.out
     if [ $? == 0 ]
     then
-        ts_print 0 'process terminated with exit code 0.'
+        ts_print 0 '['$1'] - process terminated with exit code 0.'
     else
-        ts_print -1 'runtime error with exit code '$?'.'
+        ts_print -1 '['$1'] - runtime error with exit code '$?'.'
     fi
 else
-    ts_print -1 'cpp file '$1' compile error.'
+    ts_print -1 '['$1'] - compile error.'
 fi
 
 
