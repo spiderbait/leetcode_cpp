@@ -10,21 +10,12 @@ public:
         vector<vector<int>> result;
         for(int y=0; y<grid.size(); y++) {
             for(int x=0; x<grid[0].size(); x++) {
-                int i = this->shiftX(x, grid[0].size(), k);
-                int j = this->shiftY(x, y, grid[0].size(), grid.size(), k);
+                int i = (x + k) % grid[0].size();
+                int j = ((x + k) / grid[0].size() + y) % grid.size();
                 result[j][i] = grid[y][x];
             }
         }
-
         return result;
-    }
-
-    int shiftX(int x, int maxX, int k) {
-        return (x + k) % maxX;
-    }
-
-    int shiftY(int x, int y, int maxX, int maxY, int k) {
-        return ((x + k) / maxX + y) % maxY;
     }
 
     void test() {
