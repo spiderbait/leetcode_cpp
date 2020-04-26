@@ -18,21 +18,9 @@ public:
         return result;
     }
 
-    void test() {
-        int size = 4;
-        int k = 4;
-        for(int i=0; i < size; i++) {
-            for(int j=0; j < size; j++) {
-                cout << j << ", " << i;
-                cout << " -> " << this->shiftX(j, size, k) << ", " << this->shiftY(j, i, size, size, k) << endl;
-            }
-        }
-    }
-
 };
 
 int main() {
     Solution s;
 
-    s.test();
 }
