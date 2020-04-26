@@ -40,6 +40,3 @@ then
 else
     ts_print -1 '['$1'] - compile error.'
 fi
-
-
-
