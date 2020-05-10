@@ -7,8 +7,10 @@ class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         vector<int> result;
-        
+        int m = matrix.size();
+        int n = matrix[0].size();
 
+        
     }
 
     void test() {
