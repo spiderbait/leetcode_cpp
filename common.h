@@ -8,5 +8,7 @@ int getArraySize(T &array) {
 }
 
 ListNode* arrayToLinkList(int n[]) {
-    
+    ListNode* head;
+    cout << getArraySize(n) << endl;
+    return head;
 }

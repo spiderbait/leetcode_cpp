@@ -15,7 +15,6 @@ public:
         bool isBorrow = false;
 
         while(quo != 0 || rem != 0) {
-            // cout << "quo=" << quo << ",rem=" << rem << endl;
             if (rem == 0) {
                 rs.push_back('Z');
                 isBorrow = true;
