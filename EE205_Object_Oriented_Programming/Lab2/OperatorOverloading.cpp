@@ -35,6 +35,7 @@ class Point2D {
             point2d.y = this->y + p.y;
             return point2d;
         }
+
 };
 
 // typedef class Point2D Point2D;
