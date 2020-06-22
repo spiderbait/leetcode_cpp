@@ -10,10 +10,10 @@
 // You'll need to turn this into a class.
 // Make sure you use the concept of encapsulation,
 // and hide the class's internal data.
-struct Point2D {
-    float x;
-    float y;
-};
+// struct Point2D {
+//     float x;
+//     float y;
+// };
 
 class Point2D {
     private:

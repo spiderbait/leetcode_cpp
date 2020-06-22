@@ -17,19 +17,19 @@ class Point2D {
 
         }
 
-        float getX() {
+        float get_x() {
             return this->x;
         }
 
-        float getY() {
+        float get_y() {
             return this->y;
         }
 
-        void setX(float x) {
+        void set_x(float x) {
             this->x = x;
         }
 
-        void setY(float y) {
+        void set_y(float y) {
             this->y = y;
         }
 
@@ -42,27 +42,27 @@ class Point2D {
 
 Point2D operator+(Point2D lhs, Point2D rhs) {
     Point2D p;
-    p.setX(lhs.getX() + rhs.getY());
-    p.setY(lhs.getY() + rhs.getY());
+    p.set_x(lhs.get_x() + rhs.get_y());
+    p.set_y(lhs.get_y() + rhs.get_y());
     return p;
 }
 
 Point2D operator-(Point2D lhs, Point2D rhs) {
     Point2D p;
-    p.setX(lhs.getX() - rhs.getY());
-    p.setY(lhs.getY() - rhs.getY());
+    p.set_x(lhs.get_x() - rhs.get_y());
+    p.set_y(lhs.get_y() - rhs.get_y());
     return p;
 }
 Point2D operator*(Point2D lhs, Point2D rhs) {
     Point2D p;
-    p.setX(lhs.getX() * rhs.getY());
-    p.setY(lhs.getY() * rhs.getY());
+    p.set_x(lhs.get_x() * rhs.get_y());
+    p.set_y(lhs.get_y() * rhs.get_y());
     return p;
 }
 Point2D operator/(Point2D lhs, Point2D rhs) {
     Point2D p;
-    p.setX(lhs.getX() / rhs.getY());
-    p.setY(lhs.getY() / rhs.getY());
+    p.set_x(lhs.get_x() / rhs.get_y());
+    p.set_y(lhs.get_y() / rhs.get_y());
     return p;
 }
 
@@ -74,6 +74,6 @@ int main(){
 
     p3 = p1 + p2;
 
-    cout << p3.getX() << " " << p3.getY() << endl;
+    cout << p3.get_x() << " " << p3.get_y() << endl;
 
 }
