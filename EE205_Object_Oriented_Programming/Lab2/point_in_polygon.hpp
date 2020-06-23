@@ -25,4 +25,20 @@ bool pnpoly(
         Person* points,
         Person test);
 
+// bool pnpoly(std::size_t num_points,
+//         Person* points,
+//         Person test){
+//         int i, j, c = 0;
+//         for (int i = 0, j = num_points-1; i < num_points; i++) {
+//         if( ((points[i].get_location().get_y()>test.get_location().get_y()) !=
+//                     (points[j].get_location().get_y()>test.get_location().get_y())) &&
+//                     (test.get_location().get_x() < (points[j].get_location().get_x()-points[i].get_location().get_x()) *
+//                     (test.get_location().get_y()-points[i].get_location().get_y()) / 
+//                     (points[j].get_location().get_y()-points[i].get_location().get_y()) + points[i].get_location().get_x())){
+//                         c = !c;
+//                     }
+//     }
+//     return c;
+// }
+
 #endif // POINT_IN_POLYGON_HPP
