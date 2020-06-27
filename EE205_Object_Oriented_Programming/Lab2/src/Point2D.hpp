@@ -7,6 +7,7 @@
 #ifndef POINT2D_HPP
 #define POINT2D_HPP
 
+#include <iostream>
 // You'll need to turn this into a class.
 // Make sure you use the concept of encapsulation,
 // and hide the class's internal data.
