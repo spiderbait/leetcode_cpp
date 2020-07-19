@@ -25,7 +25,7 @@ class OuterCityRing : public InnerCityRing {
 
         unsigned total_population() const {
             return this->outer_city_population +
-                   this->inner_city_population;
+                   this->inner_city_population; 
         }
 };
 
